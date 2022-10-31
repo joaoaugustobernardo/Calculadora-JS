@@ -1,0 +1,72 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    background-image: linear-gradient(50deg, black, blue) ;
+    height: 100vh;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+.calculadora{
+    position:absolute;
+    background-color: black;
+    top: 25%;
+    left: 40%;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.num:hover{
+    background-color:black;
+}
+
+.somas:hover{
+    background-color: black;
+}
+
+#visor{
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    margin: 6px;
+    font-size: 30px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+.num{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(0,0,139);
+    border: none;
+    color: white;
+   
+}
+.somas{
+    
+        margin: 2px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: rgb(0,0,139);
+        border: none;
+        color: white;
+       
+    
+}
+
+.chave{
+
+    padding-top: 100px;
+}

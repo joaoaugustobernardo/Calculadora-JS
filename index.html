@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Calculadora</title>
+   <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<form name="calcform" method="post" action="" class="fundo">
+   
+      
+<div class="calculadora">
+   
+<h1> Calculadora </h1>
+      <input type="text" name="visor" id="visor" />
+
+      <table id="calc">
+         <tr>
+            <td><input type="button" name="limpar" class="num" value="AC" onclick="calcLimpar()" /></td>
+            <td><input type="button" name="maismenos" class="num" value="+/-" onclick="calcNumber('-')" /></td>
+            <td><input type="button" name="porcent" class="num" value="%" onclick="calcParse('porcentagem')" /></td>
+            <td><input type="button" name="dividir" class="somas" value="/" onclick="calcParse('dividir')" /></td>
+            
+
+         </tr>
+         <tr>
+            <td><input type="button" name="num9" class="num" value="9" onclick="calcNumber(9)" /></td>
+            <td><input type="button" name="num8" class="num" value="8" onclick="calcNumber(8)" /></td>
+            <td><input type="button" name="num7" class="num" value="7" onclick="calcNumber(7)" /></td>
+            
+            <td><input type="button" name="multiplicar" class="somas" value="*" onclick="calcParse('multiplicar')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="num6" class="num" value="6" onclick="calcNumber(6)" /></td>
+            <td><input type="button" name="num5" class="num" value="5" onclick="calcNumber(5)" /></td>
+            <td><input type="button" name="num4" class="num" value="4" onclick="calcNumber(4)" /></td>
+            <td><input type="button" name="subtrair" class="somas" value="-" onclick="calcParse('subtrair')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="num3" class="num" value="3" onclick="calcNumber(3)" /></td>
+            <td><input type="button" name="num2" class="num" value="2" onclick="calcNumber(2)" /></td>
+            <td><input type="button" name="num1" class="num" value="1" onclick="calcNumber(1)" /></td>
+            <td><input type="button" name="somar" class="somas" value="+" onclick="calcParse('somar')" /></td>
+         </tr>
+         <tr>
+   <td colspan="2"><input style="width: 106px;" type="button" name="num0" class="num" value="0" onclick="calcNumber(0)"/></td>
+         <td><input type="button" name="ponto" class="num" value="." onclick="calcNumber('.')" /></td> 
+         <td><input type="button" name="igual" class="num" value="=" onclick="calcParse('resultado')" /></td>
+         </tr>
+                      
+      </table>
+</div>
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
